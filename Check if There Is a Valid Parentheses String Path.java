@@ -1,4 +1,4 @@
-class Solution {
+lass Solution {
 
     private boolean[][][] visited;
 
