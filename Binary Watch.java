@@ -6,7 +6,6 @@ class Solution {
             
             for (int minute = 0; minute < 60; minute++) {
                 
-                int totalBits = Integer.bitCount(hour) + Integer.bitCount(minute);
                 
                 if (totalBits == turnedOn) {
                     
