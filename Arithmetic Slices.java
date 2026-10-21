@@ -6,16 +6,16 @@ class Solution {
         int cnt =0;
         int n = nums.length;
         for(int i=1;i<n;i++){ 
-            int l = i-1;    // First term of AP (index)
-            int r = i;      // second term of AP  (index)
-            int d = nums[r]-nums[l];  // common difference 
+            int l = i-1;    
+            int r = i;      
+            int d = nums[r]-nums[l]; 
             while(r<n && nums[r]-nums[r-1]==d) r++; 
-            long len = r-l;     // length of AP 
-            long sum = f(len);  // contributions of this AP
+            long len = r-l;     
+            long sum = f(len);  
 
             cnt = cnt+ (int)(sum) ;
 
-            i=r-1; // we already scanned this subarray so skip/ jump
+            i=r-1; 
         }
         return cnt;
     }
